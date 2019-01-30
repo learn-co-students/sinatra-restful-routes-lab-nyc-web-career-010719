@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Index</title>
+  </head>
+  <body>
+    <h1>Recipes</h1>
+    <ul>
+      <% Recipe.all.each do |r| %>
+      <li>
+        <h2><a href="/recipes/<%= r.id %>"><%= r.name %></a></h2>
+        <p><b>Ingredients: </b><%= r.ingredients %>
+        <p><b>Cook time: </b><%= r.cook_time %></p>
+      </li>
+      <% end %>
+    </ul>
+  </body>
+</html>
