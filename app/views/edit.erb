@@ -10,13 +10,13 @@
       <input type="hidden" name="_method" value="patch">
       <p>
           <label for="name"><b>Name: </b></label>
-          <input type="text" name="recipe[name]" value="<%= @recipe.name %>">
+          <input id="name" type="text" name="recipe[name]" value="<%= @recipe.name %>">
       </p><p>
           <label for="ingredients"><b>Ingredients: </b></label>
-          <input type="text" name="recipe[ingredients]" value="<%= @recipe.ingredients %>">
+          <input id="ingredients" type="text" name="recipe[ingredients]" value="<%= @recipe.ingredients %>">
       </p><p>
           <label for="cook_time"><b>Cook time: </b></label>
-          <input type="text" name="recipe[cook_time]" value="<%= @recipe.cook_time %>">
+          <input id="cook_time" type="text" name="recipe[cook_time]" value="<%= @recipe.cook_time %>">
       </p>
         <input type="submit" name="Submit" value="Submit">
     </form>
